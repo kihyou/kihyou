@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 关于主题
-permalink: /about/
+permalink: /about/theme
 ---
 
 ## Theme 
