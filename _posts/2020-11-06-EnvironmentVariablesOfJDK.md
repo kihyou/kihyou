@@ -2,7 +2,7 @@
 layout: post
 title:  "java:jdk环境变量配置"
 date:   2020-11-06
-category: java
+category: Java
 ---
 ## 配置单个JDK  
 1. 右击“此电脑”->属性  
