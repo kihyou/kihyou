@@ -40,7 +40,7 @@ category: Jekyll
 ## 三、Atom —— 编辑器
   [下载地址](https://atom.io/download/windows_x64)  
   [教程](https://www.hangge.com/blog/cache/detail_1149.html)  
-
+  
 ## 参考
  1. [使用 GitHub Pages](https://docs.github.com/cn/free-pro-team@latest/github/working-with-github-pages)
  2. [Github+Jekyll 搭建个人网站详细教程](https://www.jianshu.com/p/9f71e260925d);
