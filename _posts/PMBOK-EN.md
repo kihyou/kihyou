@@ -5,3 +5,4 @@ date: 2020-11-17
 category: PMP
 ---
 <embed src="/public/doc/PMP/PMBOK6-en.pdf"></embed>
+sss
