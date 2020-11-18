@@ -21,7 +21,11 @@
 title: kihyou
 email: none@none.com
 description: >- # this means to ignore newlines until "baseurl:"
-  这是一个博客。<br/>This is a blog.
+  这是一个博客。
+  <br/>
+  This is a blog.
+  <br/>
+  <a href="https://www.cnblogs.com/kihyou/">博客园</a>☚
 # baseurl: "/" # the subpath of your site, e.g. /blog
 # url: "http://ejjoo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: kihyou
