@@ -4,18 +4,24 @@ title: "4. Java输入和输出"
 date: 2020-11-18
 category: Java
 ---
-输入输出语句
-输入语句
+# 输入输出语句
+## 输入语句
+```java
 import java.util.Scanner;//导包
 Scanner sc = new Scanner(System.in);//创建Scanner对象
 //int a = sc.nextInt();
 //String s = sc.next();
 String s = sc.nextLine();
 sc.close();
-输出语句
+```
+## 输出语句
+```java
 System.print()            ——输出
 System.out.println()    ——输出并换行
-垃圾自动回收机制
+```
+
+# 垃圾自动回收机制
+```java
 object 01 = new object();
 object 02 = new object();
 02 = 01;
@@ -23,35 +29,39 @@ object 02 = new object();
 System. out . println(o2);
 //垃圾自动回收机制
 // Java GC(garbage collec, 垃圾收集,回收)
-输入输出流（IO流）
-I:input         输入
-0:output     输出
-类型:
-字节流( InputStream/ OutputStream)
-字节，绝大部分数据文件，图片音频视频
-InputStream
->
-try {
-                //创建流
-                FileInputStream fr = new FileInputStream("d:/aa/b1. txt");
-                //读取
-                byte[] data = new byte[1024];// 定义数组缓冲区，用于存放读取来的内容
-                int i = fr.read(data);// 执行读取操作，获取读取内容的有效长度
-                System . out. println(i);
-                // i = fr.read(data);//-1
-                // System. out . println(i);
-                data = Arrays. copyOf(data, i);// 根据有效长度截图数组内容。
-                System. out . println(new String(data));// 输出内容到控制台中。
-                //关闭流
-        } catch (FileNotFoundException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-OutputStream
-FileOutpitStream
+```
+
+# 输入输出流（IO流）
+* I:input         输入
+* 0:output     输出
+## 类型:
+* 字节流( InputStream/ OutputStream)
+  * 字节，绝大部分数据文件，图片音频视频
+  * InputStream  
+    ```java
+    try {
+                    //创建流
+                    FileInputStream fr = new FileInputStream("d:/aa/b1. txt");
+                    //读取
+                    byte[] data = new byte[1024];// 定义数组缓冲区，用于存放读取来的内容
+                    int i = fr.read(data);// 执行读取操作，获取读取内容的有效长度
+                    System . out. println(i);
+                    // i = fr.read(data);//-1
+                    // System. out . println(i);
+                    data = Arrays. copyOf(data, i);// 根据有效长度截图数组内容。
+                    System. out . println(new String(data));// 输出内容到控制台中。
+                    //关闭流
+            } catch (FileNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+      ```
+  * OutputStream
+    * FileOutputStream
+      ```java
         String name = UUID.randomUUID().toString();
         System.out.println(name);
         try {
@@ -62,10 +72,12 @@ FileOutpitStream
             e.printStackTrace();
 
         }
-字符流( Reader/Writer)
+      ```  
+* 字符流( Reader/Writer)
 以字符的形式，字符文本类型的数据读写操作:
-Reader
-InputStreamReader
+  * Reader
+    * InputStreamReader
+      ```java
 FileReader
 try {
   // 创建流
@@ -88,6 +100,7 @@ try {
   } catch (Exception e) {
       // TODO Auto-generated catch block
       e.printStackTrace();
+      ```
 BufferReader
 Writer
 OutputStreamWriter
