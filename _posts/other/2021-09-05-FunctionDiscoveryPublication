@@ -1,0 +1,11 @@
+2021-09-05-FunctionDiscoveryPublication
+layout: post
+title:  "开启网络发现后找不到该电脑的解决方法"
+date:   2021-09-05
+category: other
+---
+右键此电脑->管理->服务和应用程序->双击开启"FunctionDiscoveryPublication"服务
+
+```
+print("hello world!");
+```
