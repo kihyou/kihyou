@@ -6,6 +6,4 @@ category: other
 ---
 右键此电脑->管理->服务和应用程序->双击开启"FunctionDiscoveryPublication"服务
 
-```
-print("hello world!");
-```
+
